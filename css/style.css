@@ -27,6 +27,7 @@ body {
     background-color: #fadee1;
     border-bottom-right-radius: 100px;
     text-align: center;
+    z-index: 1;
 }
 .top-left:hover p {
     display: block;
@@ -73,6 +74,7 @@ body {
     background-color: #fadee1;
     border-bottom-left-radius: 100px;
     text-align: center;
+    z-index: 1;
 }
 .top-right:hover p {
     display: block;
@@ -119,6 +121,7 @@ body {
     background-color: #fadee1;
     border-top-right-radius: 100px;
     text-align: center;
+    z-index: 1;
 }
 .bottom-left:hover p {
     display: block;
@@ -167,6 +170,7 @@ body {
     background-color: #fadee1;
     border-top-left-radius: 100px;
     text-align: center;
+    z-index: 1;
 }
 .bottom-right:hover .follow {
     display: block;
@@ -219,7 +223,8 @@ h1 {
         color: #7e5b5a;
         transform: scale(1);
     }
-    75% {
+    75% {    left: 50%;
+        top: 50%;
         color: #f57973;
     }
 
