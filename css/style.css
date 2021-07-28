@@ -4,8 +4,8 @@ body {
 }
 /*ameba top left*/
 .top-left {
-    width: 30vw;
-    height: 30vh;
+    width: 20vw;
+    height: 20vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -16,14 +16,14 @@ body {
     transition-duration: 0.5s;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 .top-left p {
     display: none;
 }
 .top-left:hover{
-    width: 93vw;
-    height: 93vh;
+    width: 70vw;
+    height: 70vh;
     background-color: #fadee1;
     border-bottom-right-radius: 100px;
     text-align: center;
@@ -50,8 +50,8 @@ body {
 
 /**************ameba top right/***************/
 .top-right {
-    width: 30vw;
-    height: 30vh;
+    width: 20vw;
+    height: 20vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -68,8 +68,8 @@ body {
     display: none;
 }
 .top-right:hover{
-    width: 93vw;
-    height: 93vh;
+    width: 70vw;
+    height: 70vh;
     background-color: #fadee1;
     border-bottom-left-radius: 100px;
     text-align: center;
@@ -88,7 +88,7 @@ body {
 }
 .top-right:hover .p3 {
     animation-duration: 2.5s;
-    transform: scale(2);
+    transform: scaleY(1.1);
 }
 .top-right:hover .p4 {
     animation-duration: 4s;
@@ -96,8 +96,8 @@ body {
 
 /*ameba bottom left*/
 .bottom-left {
-    width: 30vw;
-    height: 30vh;
+    width: 20vw;
+    height: 20vh;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -108,22 +108,22 @@ body {
     transition-duration: 0.8s;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .bottom-left p {
     display: none;
 }
 .bottom-left:hover{
-    width: 93vw;
-    height: 93vh;
+    width: 70vw;
+    height: 70vh;
     background-color: #fadee1;
-    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
     text-align: center;
 }
 .bottom-left:hover p {
     display: block;
     color: #fdafab;
-    font-size: 2.5em;
+    font-size: 2em;
     animation-iteration-count: initial;
     animation-direction: alternate;
     animation-name: aparece;
@@ -131,18 +131,21 @@ body {
 }
 .bottom-left:hover .p2 {
     animation-duration: 1.5s;
+    font-size: 1.3em;
 }
 .bottom-left:hover .p3 {
     animation-duration: 2.5s;
+    font-size: 1.3em;
 }
 .bottom-left:hover .p4 {
     animation-duration: 4s;
+    font-size: 1.3em;
 }
 
 /*ameba bottom right*/
 .bottom-right {
-    width: 30vw;
-    height: 30vh;
+    width: 20vw;
+    height: 20vh;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -159,10 +162,10 @@ body {
     display: none;
 }
 .bottom-right:hover{
-    width: 93vw;
-    height: 93vh;
+    width: 70vw;
+    height: 70vh;
     background-color: #fadee1;
-    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
     text-align: center;
 }
 .bottom-right:hover .follow {
@@ -176,11 +179,13 @@ body {
 }
 /*nombre*/
 h1 {
-    align-self: center;
+    position: absolute;
+    left: 23%;
+    top: 45%;
     color: #fdafab;
     animation-iteration-count: initial;
     animation-direction: alternate;
-    animation-name: ;
+    animation-name: agrandando;
     animation-duration: 5s;
 }
 @keyframes agrandando {
