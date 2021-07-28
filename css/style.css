@@ -1,0 +1,221 @@
+body {
+    background-color: #ffecd9;
+    margin: 0;
+}
+/*ameba top left*/
+.top-left {
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #fdafab;
+    transition-property: all;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-left p {
+    display: none;
+}
+.top-left:hover{
+    width: 93vw;
+    height: 93vh;
+    background-color: #fadee1;
+    border-bottom-right-radius: 100px;
+    text-align: center;
+}
+.top-left:hover p {
+    display: block;
+    color: #fdafab;
+    font-size: 2.5em;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-name: aparece;
+    animation-duration: 1s;
+}
+
+.top-left:hover .p2 {
+    animation-duration: 1.5s;
+}
+.top-left:hover .p3 {
+    animation-duration: 2.5s;
+}
+.top-left:hover .p4 {
+    animation-duration: 4s;
+}
+
+/**************ameba top right/***************/
+.top-right {
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #b6e3e9;
+    transition-property: all;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-right p {
+    display: none;
+}
+.top-right:hover{
+    width: 93vw;
+    height: 93vh;
+    background-color: #fadee1;
+    border-bottom-left-radius: 100px;
+    text-align: center;
+}
+.top-right:hover p {
+    display: block;
+    color: #fdafab;
+    font-size: 2.5em;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-name: aparece;
+    animation-duration: 1s;
+}
+.top-right:hover .p2 {
+    animation-duration: 1.5s;
+}
+.top-right:hover .p3 {
+    animation-duration: 2.5s;
+    transform: scale(2);
+}
+.top-right:hover .p4 {
+    animation-duration: 4s;
+}
+
+/*ameba bottom left*/
+.bottom-left {
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #b0f2c2;
+    transition-property: all;
+    transition-duration: 0.8s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.bottom-left p {
+    display: none;
+}
+.bottom-left:hover{
+    width: 93vw;
+    height: 93vh;
+    background-color: #fadee1;
+    border-bottom-left-radius: 100px;
+    text-align: center;
+}
+.bottom-left:hover p {
+    display: block;
+    color: #fdafab;
+    font-size: 2.5em;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-name: aparece;
+    animation-duration: 1s;
+}
+.bottom-left:hover .p2 {
+    animation-duration: 1.5s;
+}
+.bottom-left:hover .p3 {
+    animation-duration: 2.5s;
+}
+.bottom-left:hover .p4 {
+    animation-duration: 4s;
+}
+
+/*ameba bottom right*/
+.bottom-right {
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #e9b0f2;
+    transition-property: all;
+    transition-duration: 0.8s;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.bottom-right .follow{
+    display: none;
+}
+.bottom-right:hover{
+    width: 93vw;
+    height: 93vh;
+    background-color: #fadee1;
+    border-bottom-left-radius: 100px;
+    text-align: center;
+}
+.bottom-right:hover .follow {
+    display: block;
+    color: #fdafab;
+    font-size: 2.5em;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-name: aparece;
+    animation-duration: 1s;
+}
+/*nombre*/
+h1 {
+    align-self: center;
+    color: #fdafab;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-name: ;
+    animation-duration: 5s;
+}
+@keyframes agrandando {
+    0% {
+        color: #ffecd9;
+        transform: scale(1.5)
+    }
+    1% {
+        color: #fdafab;
+    }
+    25% {
+        color: #b6e3e9;
+    }
+    45% {
+        color: #b0f2c2;
+        transform: scale(1.5)
+    }
+    65% {
+        color: #e9b0f2;
+    }
+    100% {
+        color: #ffecd9;
+    }
+}
+@keyframes aparece {
+    0% {
+        transform: scale(-1);
+        color: #7e5b5a00;
+    }
+    50% {
+        color: #7e5b5a;
+        transform: scale(1);
+    }
+    75% {
+        color: #f57973;
+    }
+
+}
