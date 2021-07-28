@@ -1,6 +1,12 @@
 body {
-    background-color: #ffecd9;
+    height: 100vh;
     margin: 0;
+}
+.fondo {
+    background: radial-gradient(circle, #fffffe 0%, #fff9c4 100%);
+    margin: 0;
+    width: 100%;
+    height: 100vh;
 }
 /*ameba top left*/
 .top-left {
@@ -10,13 +16,25 @@ body {
     top: 0;
     left: 0;
     border-bottom-right-radius: 100%;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: #fdafab;
+    box-shadow: 5px 5px 10px 5px #fdafab5d;
+    background: radial-gradient(circle, #ffffff -90%, #fdafab 60%);
     transition-property: all;
     transition-duration: 0.5s;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-name: llama;
+    animation-duration: 1s;
+}
+@keyframes llama {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.5);
+    }
 }
 .top-left p {
     display: none;
@@ -57,13 +75,18 @@ body {
     top: 0;
     right: 0;
     border-bottom-left-radius: 100%;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: #b6e3e9;
+    box-shadow: -5px 5px 10px 5px #fdafab5d;
+    background: radial-gradient(circle, #ffffff -90%, #fdafab 60%);
     transition-property: all;
     transition-duration: 0.5s;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-name: llama;
+    animation-delay: 1s;
+    animation-duration: 1s;
 }
 .top-right p {
     display: none;
@@ -104,13 +127,18 @@ body {
     bottom: 0;
     left: 0;
     border-top-right-radius: 100%;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: #b0f2c2;
+    box-shadow: 5px -5px 10px 5px #fdafab5d;
+    background: radial-gradient(circle, #ffffff -90%, #fdafab 60%);
     transition-property: all;
     transition-duration: 0.8s;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-name: llama;
+    animation-delay: 1s;
+    animation-duration: 1s;
 }
 .bottom-left p {
     display: none;
@@ -153,13 +181,17 @@ body {
     bottom: 0;
     right: 0;
     border-top-left-radius: 100%;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: #e9b0f2;
+    box-shadow: -5px -5px 10px 5px #fdafab5d;
+    background: radial-gradient(circle, #ffffff -90%, #fdafab 60%);
     transition-property: all;
     transition-duration: 0.8s;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-name: llama;
+    animation-duration: 1s;
 }
 .bottom-right .follow{
     display: none;
