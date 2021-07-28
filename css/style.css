@@ -46,12 +46,23 @@ body {
 .top-left:hover{
     width: 90vw;
     height: 70vh;
-    background-image: url(https://media.giphy.com/media/l3q2Wl7Wpz09Z5hfi/giphy.gif);
-    opacity: 0.9;
-    background-repeat: no-repeat;
     border-bottom-right-radius: 100px;
     text-align: center;
     z-index: 1;
+}
+.top-left:hover::before {
+    content: "";
+    background-image: url(https://media.giphy.com/media/l3q2Wl7Wpz09Z5hfi/giphy.gif);
+    background-color: #fff9c4;
+    background-size: cover;
+    border-bottom-right-radius: 100px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+
 }
 .top-left:hover p {
     display: block;
@@ -62,6 +73,7 @@ body {
     animation-direction: alternate;
     animation-name: aparece;
     animation-duration: 1s;
+    z-index: 0;
 }
 
 .top-left:hover .p2 {
@@ -99,16 +111,30 @@ body {
     display: none;
 }
 .top-right:hover{
-    width: 70vw;
+    width: 90vw;
     height: 70vh;
-    background-color: #fadee1;
     border-bottom-left-radius: 100px;
     text-align: center;
     z-index: 1;
 }
+.top-right:hover::before {
+    content: "";
+    background-image: url(https://media.giphy.com/media/3LrK7Q7UhF5MnhZ5ja/giphy.gif);
+    background-color: #fff9c4;
+    background-size:center;
+    border-bottom-left-radius: 100px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+
+}
 .top-right:hover p {
     display: block;
-    color: #f75b53;
+    color: #b1130b;
+    font-family: Roboto;
     font-size: 2em;
     animation-iteration-count: initial;
     animation-direction: alternate;
@@ -151,9 +177,13 @@ body {
     display: none;
 }
 .bottom-left:hover{
-    width: 70vw;
+    width: 90vw;
     height: 70vh;
-    background-color: #fadee1;
+    background-image: url(https://media.giphy.com/media/3o6fIQ1JE7SfTCZwd2/giphy.gif);
+    background-color: #fff9c4;
+    background-size:cover;
+    background-position: center;
+    opacity: 0.9;
     border-top-right-radius: 100px;
     text-align: center;
     z-index: 1;
@@ -199,6 +229,7 @@ body {
     animation-direction: alternate;
     animation-name: llama;
     animation-duration: 1s;
+    cursor: pointer;
 }
 .bottom-right .follow{
     display: none;
@@ -206,7 +237,11 @@ body {
 .bottom-right:hover{
     width: 70vw;
     height: 70vh;
-    background-color: #fadee1;
+    background-image: url(https://media.giphy.com/media/atZII8NmbPGw0/giphy.gif);
+    background-color: #fff9c4;
+    background-size:cover;
+    background-position:center;
+    opacity: 0.9;
     border-top-left-radius: 100px;
     text-align: center;
     z-index: 1;
@@ -236,6 +271,7 @@ h1 {
     left: 23%;
     top: 45%;
     color: #fdafab;
+    font-family: Roboto;
     border: solid #fdafab 1px;
     border-radius: 40px;
     box-shadow: 2px 0px 10px 5px #fdafab5d;
@@ -244,28 +280,87 @@ h1 {
     animation-direction: alternate;
     animation-name: agrandando;
     animation-duration: 3s;
+    transition: all 0.5s;
  
 }
+h1:hover {
+    transform: scale(1.5);
+    background: linear-gradient(217deg, #fdafab, rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, #f29a95, rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, #ede4e3, rgba(0,0,255,0) 70.71%);
+    color: #fff9c4;
+    font-family: Roboto;
+}
+.fas {
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    font-size: 2.5em;
+    color: #fdafab;
+    animation-iteration-count:unset;
+    animation-direction: alternate;
+    animation-name: girar;
+    animation-duration: 1s;
+}
+.fas:hover::before {
+    content: "";
+    font-family: Roboto;
+    font-size: 0.5em;
+    position: absolute;
+    width: 50vw;
+    animation-iteration-count:unset;
+    animation-direction: alternate;
+    animation-name: hola;
+    animation-duration: 3s;
+}
+
+@keyframes hola {
+    0% {
+        content: "H"
+    }
+    10% {
+        content: "Ho";
+    }
+    20% {
+        content: "Hol";
+    }
+    30% {
+        content: "Hola M";
+    }
+    40% {
+        content: "Hola Mu";
+    }
+    50% {
+        content: "Hola Mun";
+    }
+    60% {
+        content: "Hola Mund";
+    }
+    80% {
+        content: "Hola Mundo!";
+    }
+    100% {
+        transform: translate(50px, 350px);
+    }
+
+}
+
+@keyframes girar {
+    0%{ 
+        transform: rotate(0deg); 
+    }
+    100%{ 
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes agrandando {
     0% {
         color: #ffecd9;
         transform: scale(1.5)
     }
-    1% {
-        color: #fdafab;
-    }
-    25% {
-        color: #b6e3e9;
-    }
-    45% {
-        color: #b0f2c2;
-        transform: scale(1.5)
-    }
-    65% {
-        color: #e9b0f2;
-    }
     100% {
-        color: #ffecd9;
+        color: #fdafab;
     }
 }
 @keyframes aparece {
