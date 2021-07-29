@@ -302,16 +302,25 @@ h1:hover {
     animation-name: girar;
     animation-duration: 1s;
 }
-.fas:hover::before {
+.fas::after {
     content: "";
     font-family: Roboto;
-    font-size: 0.5em;
+    font-size: 0.7em;
     position: absolute;
     width: 50vw;
     animation-iteration-count:unset;
     animation-direction: alternate;
     animation-name: hola;
     animation-duration: 3s;
+    transition: content 3s;
+}
+
+.fas::after {
+    content:"Hola Mundo!";
+    position: absolute;
+    left: 70px;
+    bottom: 5px;
+    transform: scale(1.1);
 }
 
 @keyframes hola {
@@ -332,15 +341,16 @@ h1:hover {
     }
     50% {
         content: "Hola Mun";
+        transform: translate(50px, 350px);
     }
     60% {
         content: "Hola Mund";
     }
-    80% {
+    70% {
         content: "Hola Mundo!";
     }
-    100% {
-        transform: translate(50px, 350px);
+    80% {
+        transform: translate(15px,10px);
     }
 
 }
